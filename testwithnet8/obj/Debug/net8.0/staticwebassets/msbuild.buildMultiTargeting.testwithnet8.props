@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/testwithnet8.props" />
+</Project>
