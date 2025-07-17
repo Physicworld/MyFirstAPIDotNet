@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="../buildMultiTargeting/testwithnet8.props" />
+  <Import Project="..\buildMultiTargeting\testwithnet8.props" />
 </Project>

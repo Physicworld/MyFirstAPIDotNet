@@ -16,7 +16,13 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+builder.Services.AddHostedService<DatabaseMigrator>();
+
 var app = builder.Build();
+
+
+// Apply database migrations on startup
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -38,6 +44,41 @@ app.MapPost("/products", async (Product product, [FromServices] ApplicationDbCon
     db.Products.Add(product); // OR db.Add(category)
     await db.SaveChangesAsync();
 });
+
+app.MapPost("/people", async (CreatePersonDto request, [FromServices] ApplicationDbContext db) =>
+{
+    var person = new Person
+    {
+        FirstName = request.FirstName,
+        LastName = request.LastName
+    };
+    db.People.Add(person);
+    await db.SaveChangesAsync();
+
+    return Results.Created($"/people/{person.Id}", person);
+});
+
+
+app.MapGet("/people/{id}", async (int id, [FromServices] ApplicationDbContext db) =>
+{
+    var person = await db.People.FindAsync(id);
+
+
+    if (person == null)
+    {
+        return Results.NotFound();
+    }
+
+    var personDto = new PersonDto
+    {
+        Id = person.Id,
+        FirstName = person.FirstName,
+        LastName = person.LastName
+    };
+
+    return Results.Ok(personDto);
+});
+
 
 app.MapGet("/products/{id}", async (int id, [FromServices] ApplicationDbContext db) =>
 {

@@ -1,26 +1,45 @@
 {
   "format": 1,
   "restore": {
-    "/home/sundaythequant/RiderProjects/testwithnet8/testwithnet8/testwithnet8.csproj": {}
+    "C:\\Users\\JesusMendoza\\source\\repos\\MyFirstAPIDotNet\\testwithnet8\\testwithnet8.csproj": {}
   },
   "projects": {
-    "/home/sundaythequant/RiderProjects/testwithnet8/testwithnet8/testwithnet8.csproj": {
+    "C:\\Users\\JesusMendoza\\source\\repos\\MyFirstAPIDotNet\\testwithnet8\\testwithnet8.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/sundaythequant/RiderProjects/testwithnet8/testwithnet8/testwithnet8.csproj",
+        "projectUniqueName": "C:\\Users\\JesusMendoza\\source\\repos\\MyFirstAPIDotNet\\testwithnet8\\testwithnet8.csproj",
         "projectName": "testwithnet8",
-        "projectPath": "/home/sundaythequant/RiderProjects/testwithnet8/testwithnet8/testwithnet8.csproj",
-        "packagesPath": "/home/sundaythequant/.nuget/packages/",
-        "outputPath": "/home/sundaythequant/RiderProjects/testwithnet8/testwithnet8/obj/",
+        "projectPath": "C:\\Users\\JesusMendoza\\source\\repos\\MyFirstAPIDotNet\\testwithnet8\\testwithnet8.csproj",
+        "packagesPath": "C:\\Users\\JesusMendoza\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JesusMendoza\\source\\repos\\MyFirstAPIDotNet\\testwithnet8\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages",
+          "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
+          "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages",
+          "C:\\Program Files\\DevExpress 25.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/sundaythequant/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\JesusMendoza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 25.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\DevExpress 24.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\DevExpress 24.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\DevExpress 25.1\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/BW9WR4LPAUXqHLd3WlQmsJnjWiegyFotKlYwlpfQyNOHlbWilZ/api/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -32,6 +51,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -84,7 +108,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.117/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
